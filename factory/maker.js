@@ -1,7 +1,8 @@
 const file = require('fs')
 
 const makeProto=async(nombre)=>{
-    const body=`{\n"name":"${nombre}"\n}`
+
+    const body=`{\n "name":"${nombre}",\n "colums":[]\n}`
 
     try{
         file.writeFileSync(`${nombre}.json`,body)
