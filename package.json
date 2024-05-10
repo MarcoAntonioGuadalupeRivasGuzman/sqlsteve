@@ -1,0 +1,27 @@
+{
+  "name": "sqlsteve",
+  "version": "0.0.1",
+  "description": "herramienta para manejar sql",
+  "main": "sqlSteve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoAntonioGuadalupeRivasGuzman/sqlsteve.git"
+  },
+  "keywords": [
+    "sql",
+    "orm",
+    "toolkit"
+  ],
+  "author": "Marco Rivas",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MarcoAntonioGuadalupeRivasGuzman/sqlsteve/issues"
+  },
+  "homepage": "https://github.com/MarcoAntonioGuadalupeRivasGuzman/sqlsteve#readme",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
