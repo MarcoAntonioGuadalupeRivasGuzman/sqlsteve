@@ -2,19 +2,19 @@
 todo agregar estos tipos de datos 
 
 Tipos de datos de cadena (string):
-CHAR(size): Cadena de longitud fija (puede contener letras, números y caracteres especiales). El parámetro size especifica la longitud de la columna en caracteres (de 0 a 255).
-VARCHAR(size): Cadena de longitud variable (puede contener letras, números y caracteres especiales). El parámetro size especifica la longitud máxima de la columna en caracteres (de 0 a 65535).
-BINARY(size): Similar a CHAR(), pero almacena cadenas binarias en bytes.
-VARBINARY(size): Similar a VARCHAR(), pero almacena cadenas binarias en bytes.
++CHAR(size): Cadena de longitud fija (puede contener letras, números y caracteres especiales). El parámetro size especifica la longitud de la columna en caracteres (de 0 a 255).
++VARCHAR(size): Cadena de longitud variable (puede contener letras, números y caracteres especiales). El parámetro size especifica la longitud máxima de la columna en caracteres (de 0 a 65535).
++BINARY(size): Similar a CHAR(), pero almacena cadenas binarias en bytes.
++VARBINARY(size): Similar a VARCHAR(), pero almacena cadenas binarias en bytes.
 Otros tipos incluyen TINYBLOB, TINYTEXT, BLOB, MEDIUMTEXT, MEDIUMBLOB, LONGTEXT y LONGBLOB.
 
 Tipos de datos numéricos:
-BIT(size): Valor de bits (el tamaño se especifica en bits, de 1 a 64).
-TINYINT(size): Entero muy pequeño (rango firmado: -128 a 127, rango no firmado: 0 a 255).
-BOOL o BOOLEAN: Representa valores verdaderos o falsos.
-SMALLINT(size): Entero pequeño (rango firmado: -32768 a 32767, rango no firmado: 0 a 65535).
-MEDIUMINT(size): Entero mediano (rango firmado: -8388608 a 8388607).
-Otros tipos incluyen INT, BIGINT, FLOAT y DOUBLE.
++BIT(size): Valor de bits (el tamaño se especifica en bits, de 1 a 64).
++TINYINT(size): Entero muy pequeño (rango firmado: -128 a 127, rango no firmado: 0 a 255).
++BOOL o BOOLEAN: Representa valores verdaderos o falsos.
++SMALLINT(size): Entero pequeño (rango firmado: -32768 a 32767, rango no firmado: 0 a 65535).
++MEDIUMINT(size): Entero mediano (rango firmado: -8388608 a 8388607).
++Otros tipos incluyen INT, BIGINT, FLOAT y DOUBLE.
 
 Tipos de datos de fecha y hora:
 DATE: Almacena fechas (formato ‘YYYY-MM-DD’).
