@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "herramienta para manejar sql",
   "main": "sqlSteve.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/MarcoAntonioGuadalupeRivasGuzman/sqlsteve#readme",
   "dependencies": {
+    "inquirer": "^9.2.20",
     "yargs": "^17.7.2"
   }
 }
