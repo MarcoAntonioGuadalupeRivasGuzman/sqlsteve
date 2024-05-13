@@ -1,0 +1,53 @@
+
+todo agregar estos tipos de datos 
+
+Tipos de datos de cadena (string):
+CHAR(size): Cadena de longitud fija (puede contener letras, números y caracteres especiales). El parámetro size especifica la longitud de la columna en caracteres (de 0 a 255).
+VARCHAR(size): Cadena de longitud variable (puede contener letras, números y caracteres especiales). El parámetro size especifica la longitud máxima de la columna en caracteres (de 0 a 65535).
+BINARY(size): Similar a CHAR(), pero almacena cadenas binarias en bytes.
+VARBINARY(size): Similar a VARCHAR(), pero almacena cadenas binarias en bytes.
+Otros tipos incluyen TINYBLOB, TINYTEXT, BLOB, MEDIUMTEXT, MEDIUMBLOB, LONGTEXT y LONGBLOB.
+
+Tipos de datos numéricos:
+BIT(size): Valor de bits (el tamaño se especifica en bits, de 1 a 64).
+TINYINT(size): Entero muy pequeño (rango firmado: -128 a 127, rango no firmado: 0 a 255).
+BOOL o BOOLEAN: Representa valores verdaderos o falsos.
+SMALLINT(size): Entero pequeño (rango firmado: -32768 a 32767, rango no firmado: 0 a 65535).
+MEDIUMINT(size): Entero mediano (rango firmado: -8388608 a 8388607).
+Otros tipos incluyen INT, BIGINT, FLOAT y DOUBLE.
+
+Tipos de datos de fecha y hora:
+DATE: Almacena fechas (formato ‘YYYY-MM-DD’).
+TIME: Almacena horas (formato ‘HH:MM:SS’).
+DATETIME: Almacena fecha y hora (formato ‘YYYY-MM-DD HH:MM:SS’).
+TIMESTAMP: Almacena una marca de tiempo (similar a DATETIME pero con zona horaria).
+YEAR: Almacena años (formato ‘YYYY’).
+
+Tipos de datos especiales:
+ENUM(val1, val2, val3, ...): Objeto de cadena con un valor elegido de una lista de posibles valores.
+SET(val1, val2, val3, ...): Objeto de cadena con 0 o más valores de una lista de posibles opciones.
+
+Tipos de datos espaciales (GIS):
+GEOMETRY: Almacena datos geométricos (puntos, líneas, polígonos, etc.).
+POINT, LINESTRING, POLYGON: Tipos específicos de datos geométricos.
+GEOMETRYCOLLECTION: Colección de objetos geométricos.
+Estos tipos son útiles para sistemas de información geográfica (GIS).
+
+Tipos de datos JSON:
+JSON: Almacena datos en formato JSON (JavaScript Object Notation).
+Puedes usarlo para almacenar estructuras de datos complejas o información no tabular.
+
+Tipos de datos de texto completo:
+FULLTEXT: Útil para búsquedas de texto completo en columnas de texto.
+Permite realizar búsquedas más avanzadas que las operaciones de igualdad.
+
+Tipos de datos binarios extendidos:
+ENUM y SET también pueden considerarse tipos de datos binarios extendidos.
+Estos tipos permiten almacenar múltiples valores en una sola columna.
+
+
+Tipos de datos binarios grandes (BLOB):
+TINYBLOB: Almacena datos binarios pequeños (hasta 255 bytes).
+BLOB: Almacena datos binarios más grandes (hasta 65,535 bytes).
+MEDIUMBLOB: Almacena datos binarios medianos (hasta 16,777,215 bytes).
+LONGBLOB: Almacena datos binarios muy grandes (hasta 4 GB).
