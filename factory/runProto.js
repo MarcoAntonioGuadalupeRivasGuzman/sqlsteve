@@ -10,12 +10,12 @@ function setFieldType(campo) {
         case 'bool':
         case 'bolean':
         case 'date':
-            return `${campo.nameField} ${campo.typeField}`
+            return `${campo.nameField} ${campo.typeField} ${campo.isNull ? 'not null': ''}`
 
         case 'float':
         case 'double':
         case 'decimal':
-            return `${campo.nameField} ${campo.typeField}(${campo.sizeField},${campo.floatField})`
+            return `${campo.nameField} ${campo.typeField}(${campo.sizeField},${campo.floatField}) ${campo.isNull ? 'not null': ''}`
 
         case 'char':
         case 'varchar':
@@ -25,7 +25,7 @@ function setFieldType(campo) {
         case 'tinyint':
         case 'smallint':
         case 'mediumint':  
-            return `${campo.nameField} ${campo.typeField}(${campo.sizeField})`
+            return `${campo.nameField} ${campo.typeField}(${campo.sizeField}) ${campo.isNull ? 'not null': ''}`
 
     }
 }
