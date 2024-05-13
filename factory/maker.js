@@ -1,6 +1,6 @@
-const file = require('fs')
+import file from 'fs'
 
-const makeProto=async(nombre)=>{
+export function makeProto(nombre){
 
     const ruta = './protos'
 
@@ -17,8 +17,4 @@ const makeProto=async(nombre)=>{
     catch(error){
         throw error
     }
-}
-
-module.exports={
-    makeProto
 }
