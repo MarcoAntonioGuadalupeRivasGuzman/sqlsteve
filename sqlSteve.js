@@ -2,11 +2,16 @@
 const argv = require('yargs').argv;*/
 
 import { makeProto } from "./factory/maker.js"
+import { runProto } from "./factory/runProto.js"
 import { menu } from "./helper/menu.js"
 import inquirer from 'inquirer'
 
 console.clear()
 console.log('sqlSteve')
+
+runProto('prueba.json')
+    .then(sentencia=>console.log(sentencia))
+    .catch(err=>console.log(err))
 
 /*const fileName=argv.proto
 
@@ -19,7 +24,7 @@ makeProto('prueba')
     .catch(err=>console.log(err))*/
 
 
-const opcion = await inquirer.prompt([
+/*const opcion = await inquirer.prompt([
     {
         type: 'list',
         name: 'valor',
@@ -42,4 +47,4 @@ switch (opcion.valor) {
 
         console.log(makeProto(nombre.valor), 'creado \n happy hacking!')
         break
-}
+}*/
