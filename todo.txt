@@ -17,11 +17,11 @@ Tipos de datos numéricos:
 +Otros tipos incluyen INT, BIGINT, FLOAT y DOUBLE.
 
 Tipos de datos de fecha y hora:
-DATE: Almacena fechas (formato ‘YYYY-MM-DD’).
-TIME: Almacena horas (formato ‘HH:MM:SS’).
-DATETIME: Almacena fecha y hora (formato ‘YYYY-MM-DD HH:MM:SS’).
-TIMESTAMP: Almacena una marca de tiempo (similar a DATETIME pero con zona horaria).
-YEAR: Almacena años (formato ‘YYYY’).
++DATE: Almacena fechas (formato ‘YYYY-MM-DD’).
++TIME: Almacena horas (formato ‘HH:MM:SS’).
++DATETIME: Almacena fecha y hora (formato ‘YYYY-MM-DD HH:MM:SS’).
++TIMESTAMP: Almacena una marca de tiempo (similar a DATETIME pero con zona horaria).
++YEAR: Almacena años (formato ‘YYYY’).
 
 Tipos de datos especiales:
 ENUM(val1, val2, val3, ...): Objeto de cadena con un valor elegido de una lista de posibles valores.
