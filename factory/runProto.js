@@ -10,6 +10,10 @@ function setFieldType(campo) {
         case 'bool':
         case 'bolean':
         case 'date':
+        case 'time':
+        case 'datetime':
+        case 'timestamp':
+        case 'year':
             return `${campo.nameField} ${campo.typeField} ${campo.isNull ? 'not null': ''}`
 
         case 'float':
