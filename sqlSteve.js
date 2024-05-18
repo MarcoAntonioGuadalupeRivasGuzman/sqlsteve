@@ -1,7 +1,7 @@
 /*const {makeProto}=require('./factory/maker')
 const argv = require('yargs').argv;*/
 
-import { makeProto } from "./factory/maker.js"
+import { listProtos, makeProto } from "./factory/maker.js"
 import { runProto } from "./factory/runProto.js"
 import { menu } from "./helper/menu.js"
 import inquirer from 'inquirer'
@@ -9,9 +9,13 @@ import inquirer from 'inquirer'
 console.clear()
 console.log('sqlSteve')
 
-runProto('prueba.json')
+/*runProto('prueba.json')
     .then(sentencia=>console.log(sentencia))
-    .catch(err=>console.log(err))
+    .catch(err=>console.log(err))*/
+
+let archivos = listProtos()
+
+console.log(archivos)
 
 /*const fileName=argv.proto
 
