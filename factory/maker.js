@@ -18,3 +18,11 @@ export function makeProto(nombre){
         throw error
     }
 }
+
+export function listProtos(){
+    const ruta = './protos'
+
+    const archivos = file.readdirSync(ruta)
+
+    return archivos
+}
