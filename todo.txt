@@ -51,3 +51,5 @@ TINYBLOB: Almacena datos binarios pequeños (hasta 255 bytes).
 BLOB: Almacena datos binarios más grandes (hasta 65,535 bytes).
 MEDIUMBLOB: Almacena datos binarios medianos (hasta 16,777,215 bytes).
 LONGBLOB: Almacena datos binarios muy grandes (hasta 4 GB).
+
+todo agregar la creacion de campos nulos en la query
