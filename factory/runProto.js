@@ -1,5 +1,6 @@
 
 import { readFile } from 'fs/promises';
+import { makeDataObject } from './builder.js';
 
 function setFieldType(campo) {
 
@@ -50,7 +51,7 @@ export const runProto = async (fileName) => {
         index === proto.colums.length-1 ? sentencia+=');' : sentencia+=','
     })
 
-
+    console.log(makeDataObject(proto), 'data object creado \n')
     //console.log(sentencia)
 
     return sentencia
