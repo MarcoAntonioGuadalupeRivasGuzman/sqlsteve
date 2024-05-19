@@ -10,7 +10,7 @@ export function makeDataObject(object){
 
     let codigo = `class ${object.name} {`
 
-    codigo += '\nconstructor('
+    codigo += '\n\tconstructor('
 
     object.colums.forEach( function(columna,index) {
         codigo += columna.nameField
@@ -18,10 +18,10 @@ export function makeDataObject(object){
     });
 
     object.colums.forEach(function(columna){
-        codigo += `this.${columna.nameField} = ${columna.nameField}\n`
+        codigo += `\t\tthis.${columna.nameField} = ${columna.nameField}\n`
     })
 
-    codigo += '}\n}'
+    codigo += '\t}\n}'
 
     try{
         file.writeFileSync(`./dataObjects/${object.name}.js`,codigo,'utf8')
