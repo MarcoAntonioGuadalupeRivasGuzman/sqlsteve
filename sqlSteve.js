@@ -40,6 +40,7 @@ const opcion = await inquirer.prompt([
 //console.log(opcion.valor)
 
 switch (opcion.valor) {
+
     case 1:
         const nombre = await inquirer.prompt([
             {
@@ -62,5 +63,5 @@ switch (opcion.valor) {
             .then(sentencia => console.log(sentencia))
             .catch(err => console.log(err))
         break
-
+        
 }
