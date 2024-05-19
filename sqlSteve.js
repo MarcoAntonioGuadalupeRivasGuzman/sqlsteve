@@ -13,9 +13,9 @@ console.log('sqlSteve')
     .then(sentencia=>console.log(sentencia))
     .catch(err=>console.log(err))*/
 
-let archivos = listProtos()
+//let archivos = listProtos()
 
-console.log(archivos)
+//console.log(archivos)
 
 /*const fileName=argv.proto
 
@@ -28,11 +28,11 @@ makeProto('prueba')
     .catch(err=>console.log(err))*/
 
 
-/*const opcion = await inquirer.prompt([
+const opcion = await inquirer.prompt([
     {
         type: 'list',
         name: 'valor',
-        message: 'Seleciona una opcion: 1.Crear proto 2.lista protos 3.salir ',
+        message: 'Seleciona una opcion: 1.Crear proto 2.listar protos 3.salir ',
         choices: [1, 2, 3]
     }
 ])
@@ -51,4 +51,16 @@ switch (opcion.valor) {
 
         console.log(makeProto(nombre.valor), 'creado \n happy hacking!')
         break
-}*/
+
+    case 2:
+        let archivos = listProtos()
+        console.log(archivos)
+        break
+
+    case 3:
+        runProto('prueba.json')
+            .then(sentencia => console.log(sentencia))
+            .catch(err => console.log(err))
+        break
+
+}
