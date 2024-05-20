@@ -21,7 +21,15 @@ export function makeDataObject(object){
         codigo += `\t\tthis.${columna.nameField} = ${columna.nameField}\n`
     })
 
-    codigo += '\t}\n}'
+    codigo += '\t}'
+
+    codigo += '\n\tcreateUpdate(){\n\t}\n'
+
+    codigo += '\tselect(){\n\t}\n'
+
+    codigo += '\tdelete(){\n\t}\n'
+
+    codigo += '\n}'
 
     try{
         file.writeFileSync(`./dataObjects/${object.name}.js`,codigo,'utf8')
