@@ -32,8 +32,8 @@ const opcion = await inquirer.prompt([
     {
         type: 'list',
         name: 'valor',
-        message: 'Seleciona una opcion: 1.Crear proto 2.listar protos 3.salir ',
-        choices: [1, 2, 3]
+        message: 'Seleciona una opcion: 1.Crear proto 2.listar protos 3.correr proto 4.salir ',
+        choices: [1, 2, 3, 4]
     }
 ])
 
