@@ -5,4 +5,11 @@ class prueba {
 		this.fecha = fecha
 		this.altura = altura
 	}
+	createUpdate(){
+	}
+	select(){
+	}
+	delete(){
+	}
+
 }
