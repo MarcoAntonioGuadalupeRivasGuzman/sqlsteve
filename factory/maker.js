@@ -8,7 +8,7 @@ export function makeProto(nombre){
         file.mkdirSync(ruta)
     }
 
-    const body=`{\n "name":"${nombre}",\n "colums":[]\n}`
+    const body=`{\n "name":"${nombre}",\n "colums":[]\n, "addColums":[]\n}`
 
     try{
         file.writeFileSync(`./protos/${nombre}.json`,body)
