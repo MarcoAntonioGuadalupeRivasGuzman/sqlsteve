@@ -23,6 +23,8 @@ export function makeDataObject(object){
 
     codigo += `\t\tthis.sentencia = ""`
 
+    codigo += `\t\tthis.tableName = ${object.name}`
+
     codigo += '\t}'
 
     codigo += '\n\tcreateUpdate(){\n\t}\n'
