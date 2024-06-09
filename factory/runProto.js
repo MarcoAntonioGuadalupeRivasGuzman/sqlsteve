@@ -45,7 +45,7 @@ export const runProto = async (fileName) => {
 
     let sentencia = ''
 
-    sentencia = 'create table ' + proto.name + '(id primary key,'
+    sentencia = 'create table ' + proto.name + '(id int primary key auto_increment,'
 
     proto.colums.forEach(function (columna,index) {
         sentencia += setFieldType(columna)
