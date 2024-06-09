@@ -6,7 +6,14 @@ Tipos de datos de cadena (string):
 +VARCHAR(size): Cadena de longitud variable (puede contener letras, números y caracteres especiales). El parámetro size especifica la longitud máxima de la columna en caracteres (de 0 a 65535).
 +BINARY(size): Similar a CHAR(), pero almacena cadenas binarias en bytes.
 +VARBINARY(size): Similar a VARCHAR(), pero almacena cadenas binarias en bytes.
-Otros tipos incluyen TINYBLOB, TINYTEXT, BLOB, MEDIUMTEXT, MEDIUMBLOB, LONGTEXT y LONGBLOB.
+Otros tipos incluyen 
+TINYBLOB, 
+TINYTEXT, 
++BLOB, 
+MEDIUMTEXT, 
+MEDIUMBLOB, 
+LONGTEXT y 
+LONGBLOB.
 
 Tipos de datos numéricos:
 +BIT(size): Valor de bits (el tamaño se especifica en bits, de 1 a 64).
