@@ -1,6 +1,7 @@
 
 import { readFile } from 'fs/promises';
 import { makeDataObject } from './builder.js';
+import { coneccionDb } from '../database/conexion.js';
 
 function setFieldType(campo) {
 
@@ -50,6 +51,13 @@ export const runProto = async (fileName) => {
         sentencia += setFieldType(columna)
         index === proto.colums.length-1 ? sentencia+=');' : sentencia+=','
     })
+
+    try{
+        const resultado=coneccionDb.query(sentencia)
+    }catch(error){
+        console.log(error)
+    }
+    
 
     console.log(makeDataObject(proto), 'data object creado \n')
     //console.log(sentencia)
