@@ -59,7 +59,7 @@ switch (opcion.valor) {
         break
 
     case 3:
-        runProto('prueba.json')
+        runProto('alumno.json')
             .then(sentencia => console.log(sentencia))
             .catch(err => console.log(err))
         break
