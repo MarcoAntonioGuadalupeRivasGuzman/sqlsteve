@@ -1,9 +1,9 @@
-import {createPool} from "myslq2/promise";
+import {createPool} from "mysql2/promise";
 
 export const coneccionDb=createPool({
-    host:"localhost",
+    host: 'localhost',
     port: 3306,
+    user: 'tony',
     database:"prueba",
-    user:"root",
-    pasword:"T0n1h4ll4n1472"
+    password: '12345'
 })
