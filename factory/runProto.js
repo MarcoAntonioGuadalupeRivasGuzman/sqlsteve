@@ -16,6 +16,7 @@ function setFieldType(campo) {
         case 'datetime':
         case 'timestamp':
         case 'year':
+        case 'blob':
             return `${campo.nameField} ${campo.typeField} ${campo.isNull ? 'not null': 'null'}`
 
         case 'float':
