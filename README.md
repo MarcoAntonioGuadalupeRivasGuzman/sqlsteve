@@ -29,8 +29,13 @@ El campo column es una arrego de objetos en el que cada objeto representa una
 columna y los atributos describen las caracteristicas que se quieren en las columna 
 por el momento los atributos esperados son los siguientes:
 
-nameField: 
-typeField:
-sizeField:
-floatField:
-isNull:
+- nameField: es el nombre que tendra la columa de la tabla, es de tipo string
+
+- typeField: es el tipo de dato que tendra la columna (int, varchar, date), es de tipo string
+
+- sizeField: es el tamanio del dato, se usa en los casos que sea necesario, es de tipo int
+
+- floatField: es la cantidad de flotantes que permitira la columna, es de tipo int
+
+- isNull: permite que la columna acepte nulos o no, es de tipo boleano (true,false) true 
+permite valores nullos
