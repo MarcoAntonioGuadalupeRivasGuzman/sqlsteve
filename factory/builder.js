@@ -21,6 +21,8 @@ export function makeDataObject(object){
         codigo += `\t\tthis.${columna.nameField} = ${columna.nameField}\n`
     })
 
+    codigo += `\t\tthis.sentencia = ""`
+
     codigo += '\t}'
 
     codigo += '\n\tcreateUpdate(){\n\t}\n'
