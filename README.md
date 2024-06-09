@@ -23,7 +23,7 @@ contiene de momento dos campos: el campo name y el campo colums.
 El campo name hace referencia al nombre que tendra la tabla y por defecto 
 se toma el mismo nombre que tiene el proto para el nombre de la tabla.
 
-### Camp colums
+### Campo colums
 
 El campo column es una arrego de objetos en el que cada objeto representa una 
 columna y los atributos describen las caracteristicas que se quieren en las columna 
@@ -39,3 +39,13 @@ por el momento los atributos esperados son los siguientes:
 
 - isNull: permite que la columna acepte nulos o no, es de tipo boleano (true,false) true 
 permite valores nullos
+
+### Road map
+
+El objetivo es que el proyecto se pueda encargar de la creacion de las tablas y la 
+modificacion de los campos, ademas se tiene planeado que se genere un dataObject que sera 
+la representacion de la informacion de la tabla y mediante este mismo se pueda leer, escribir, 
+actualizar y eliminar con el uso del data object.
+
+Se planea que el data object tenga el control de las consultas mediante metodos que se definen en 
+la clase del data object permitiendo la manipulacion simple de la informacion.
